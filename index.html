@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph Algorithms</title>
+    <link rel="stylesheet" href="grph.css">
+    <script src="https://cdn.jsdelivr.net/npm/css-doodle@0.6.1/css-doodle.min.js"></script>
+</head>
+<body style="background-image: linear-gradient(to right,#5D4954,#FFA69E)">
+<h1 class="title">SHORTEST PATH VISUALIZER</h1>
+<div id="my-alert" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #ffc877; padding: 20px; border-radius: 10px;">
+  <p id="my-alert-text" style="font-weight: bold;font-size: x-large"></p>
+  <button onclick="hideAlert()">OK</button>
+</div>
+
+<div class="grid-container">
+
+    <div class="run">
+        <div class="sel" style="display: inline-block;">
+            <p class="algo">Algorithms:</p>
+            <select class="select">
+                <optgroup label="algorithms">
+                    <option value="1">1. Breadth First Search (BFS)</option>
+                    <option value="2" class="custom-option">2. A-star Algorithm</option>
+                </optgroup>
+            </select>
+            <input type="number" class="weight">
+        </div>
+        <div class="sel2">
+            <button class="but final" style="width: 20%;">Run</button>
+            <button class="but reset" style="width: 20%;">Reset</button>
+            <button class="but reset sameobs" style="width: 50%;">Reset with same Obstacle</button>
+        </div>
+    </div>
+
+</div>
+<p style="font-size: 40px;color: #302b63">
+    <strong>For A* algorithm:-</strong> I have keep the heuristic function variable that means user can change it and observe the time complexity of A* algorithm
+with same obstacles over different heuristic functions. Generally for grid, heuristic function is taken as the sum of euclidean distances with
+starting point and ending point. But in our case the constant for euclidean distance of ending point is taken as variable.
+</p>
+<p style="font-size: 40px;color: #302b63">
+    In our case:- <br> <strong>Heuristic Function = E.D with start point + (1+x)*E.D with end point</strong>
+</p>
+<p style="font-size: 40px;color: #ffc877"><strong>Note:-</strong>If x is not equals to 0,then for that heuristic function , A* algorithm doesn't guarantee the path which it finds to be shortest.</p>
+<script type="text/javascript" src="grp.js"></script>
+</body>
+</html>
