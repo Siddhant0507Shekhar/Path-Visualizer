@@ -1,6 +1,6 @@
 # Shortest Path Finding Visualizer
 This project is a web application that allows users to visualize the shortest path between two points on a grid, considering user-defined obstacles.
-It uses HTML, CSS, and JavaScript to provide an interactive experience.
+It uses HTML, CSS, and JavaScript to provide an interactive experience. **You can find its link** [here](https://siddhant0507shekhar.github.io/Path-Visualizer/)
 
 ## Features
 **Shortest Path Algorithms**: The application implements two popular algorithms, namely Breadth First Search and A-star, to find the 
